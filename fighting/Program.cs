@@ -1,15 +1,15 @@
 ﻿using System;
 
 public class Player{
-    public int hp { get; set; }
-    public int dmg { get; set; }
+    public int hp;
+    public int dmg;
     public Random random;
     
     public Player(int hp, int dmg) {
         this.hp = hp;
         this.dmg = dmg;
     }
-
+// sigma
     public int Attack(Player opponent) {
         int dmgdone = random.Next(dmg -3, dmg +3);
         opponent.hp = hp - dmgdone;
